@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>New Jersey Tech | Class List</title>
+</head>
+<body>
+
+<p>Course code: {{ course.course_code }}</p>
+<p>Section code: {{ section.sec_no }}</p>
+<p>Course name: {{ course.course_name }}</p>
+<p>Times: {{ section.times }}</p>
+<p>Instructor: {{ instructor.staff_ssn }}</p>
+
+<p>Students:</p>
+  <p>|--- id ---|--- name ---|--- major ---|--- year ---|  </p>
+  {% for s in students %}
+    <p>{{ s.student_id }} | {{ s.student__student_name }} | {{ s.student__major }} | {{ s.student__student_year }}</p>
+  {% endfor %}
+
+<a href="/section-list/"><button>Select New Course</button></a>
+
+</body>
+</html>

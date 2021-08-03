@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>New Jersey Tech | Registration</title>
+</head>
+<body>
+{#<div id="content" style="max-width:640px;margin:auto;">#}
+<h2>{{ form.header }}</h2>
+
+{% block form %}
+  <form method="post">
+  {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Submit</button>
+  </form>
+{% endblock %}
+
+{#</div>#}
+</body>
+</html>
