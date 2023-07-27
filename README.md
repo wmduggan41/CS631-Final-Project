@@ -12,3 +12,7 @@ Directories:
 - `Manage.py`: The Django command-line utility that lets you interact with this Django project in various ways.
 - `Table_create.sql`: An SQL script that establishes the database schema, illustrating my proficiency in SQL and database design.
 
+---
+
+![Project Diagram](schema.PNG)
+
