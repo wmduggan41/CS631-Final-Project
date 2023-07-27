@@ -1,4 +1,4 @@
-# CS631-Final-Project
+# Data Management Systems Design
 
 Project scope:
 
